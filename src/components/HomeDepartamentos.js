@@ -46,7 +46,7 @@ export default class HomeDepartamentos extends Component {
                                                 <td>{departamento.numero}</td>
                                                 <td>{departamento.localidad}</td>
                                                 <td>
-                                                    <NavLink className="btn btn-info" to={"/details/" + departamento.numero} >Details</NavLink>
+                                                    <NavLink className="btn btn-info" to={"/details/" + departamento.numero + "/" + departamento.nombre + "/" + departamento.localidad} >Details</NavLink>
                                                 </td>
                                             </tr>
                                         )
