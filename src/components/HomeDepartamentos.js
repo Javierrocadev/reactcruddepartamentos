@@ -45,8 +45,10 @@ export default class HomeDepartamentos extends Component {
                                             <tr key={index}>
                                                 <td>{departamento.numero}</td>
                                                 <td>{departamento.localidad}</td>
-                                                <td>
+                                                <td className='d-flex'>
                                                     <NavLink className="btn btn-info" to={"/details/" + departamento.numero + "/" + departamento.nombre + "/" + departamento.localidad} >Details</NavLink>
+                                                    <NavLink className="btn btn-danger" to={"/delete/" + departamento.numero} >Delete</NavLink>
+                                                    <NavLink className="btn btn-secondary" to={"/update/" + departamento.numero} >Update</NavLink>
                                                 </td>
                                             </tr>
                                         )
